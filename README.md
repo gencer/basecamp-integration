@@ -19,11 +19,11 @@ Installation
 =======================
 1. Download and extract zip file of Basecamp app.
 2. Make a symlink of /src in helpdesk_installation/__apps/basecamp and make sure all files of src folder are available under helpdesk_installation/__apps/basecamp.
-4. Now go to Admin Panel of your helpdesk and click on ‘Apps’ in left side menu.
-5. Now click on Basecamp app and you can see the details regarding this app. Click on ‘Install button’ for Basecamp app installation.
-6. Now Basecamp is installed in your helpdesk. If you want to uninstall it, then simply click on ‘Uninstall’ button.
-7. Click on ‘Basecamp’ under ‘settings’ in left side menu. Enter your Basecamp settings and click on ‘update’ to save Basecamp details.
-8. Go to your staff panel and create a new ticket. Once you have created a ticket, you can see ‘Basecamp’ in above menu.
+3. Now go to Admin Panel of your helpdesk and click on ‘Apps’ in left side menu.
+4. Now click on Basecamp app and you can see the details regarding this app. Click on ‘Install button’ for Basecamp app installation.
+5. Now Basecamp is installed in your helpdesk. If you want to uninstall it, then simply click on ‘Uninstall’ button.
+6. Click on ‘Basecamp’ under ‘settings’ in left side menu. Enter your Basecamp settings and click on ‘update’ to save Basecamp details.
+7. Go to your staff panel and create a new ticket. Once you have created a ticket, you can see ‘Basecamp’ in above menu.
 
 Installation Wiki: https://forge.kayako.com/projects/Basecamp/wiki/Wiki
 
