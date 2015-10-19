@@ -319,6 +319,9 @@ class Controller_Manager extends Controller_admin
 
 		if (isset($_GET['code'])) {
 			$this->Template->Assign('_code', $_GET['code']);
+		} else if (isset($_SERVER['REQUEST_URI'])) {
+			$code = substr($_SERVER['REQUEST_URI'], strpos($_SERVER['REQUEST_URI'], "code=") + 5);
+			$this->Template->Assign('_code', $code);
 		}
 
 		$this->View->RenderTplFile(self::MENU_ID, self::NAV_ID, $this->Language->Get('manage_basecamp'), '', false);
