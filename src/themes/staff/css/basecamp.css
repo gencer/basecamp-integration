@@ -1,0 +1,137 @@
+/*
+    Document   : basecamp
+    Created on : Jul 19, 2012, 5:34:17 PM
+    Author     : kayakosupport
+    Description:
+        Basecamp style sheet
+*/
+
+.basecamp_note {
+	background: none repeat scroll 0 0 #FFEFBB;
+	margin-top: 0px !important;
+}
+
+#todoExportFormResHolder {
+	display: none !important;
+}
+
+.basecamp_clearAll {
+	height: 0px;
+	width: 0px;
+	clear: both;
+}
+
+.basecamp_todo {
+	font-size: 14px;
+	background: #F6F1E7;
+	border-color: #D3C7B6 #B5A48C #B5A48C #D3C7B6;
+}
+
+.basecamp_tip_text {
+	font-size: 9px;
+}
+
+.basecamp_task_completed {
+	text-decoration: line-through;
+}
+
+.basecamp_viewtodo_title_wrapper {
+	background: none repeat scroll 0 0 #FFFFFF;
+}
+
+.basecamp_viewtodo_title {
+	color: #333333;
+	font-family: MuseoSans300, Calibri, Tahoma, Verdana, Arial, Helvetica;
+	font-size: 1.8em;
+	padding: 5px;
+}
+
+.basecamp_viewtodo_content_right_wrapper {
+	padding-top: 5px;
+}
+
+.basecamp_viewtodo_content_duedate {
+	float: right;
+	padding-right: 4px;
+	font-size: 9px;
+	font-weight: bold;
+}
+
+.basecamp_viewtodo_comment_wrapper {
+	background: none repeat scroll 0 0 #F6F1E7;
+	border-color: #D3C7B6 #B5A48C #B5A48C #D3C7B6;
+	border-style: solid;
+	border-width: 1px;
+	margin: 0px 8px 0px 8px;
+	position: relative;
+}
+
+.basecamp_viewtodo_poster_wrapper {
+	float: left;
+	padding: 10px;
+	width: 140px;
+}
+
+.basecamp_viewtodo_poster {
+	color: #B24C58;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: MuseoSans300, Candara, 'Trebuchet MS', Verdana, Arial, Helvetica;
+	margin-left: -50px;
+	padding: 0 0 0 10px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.15);
+}
+
+.basecamp_viewtodo_postedon1 {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border-left: 4px solid #DED5C7;
+	height: auto;
+	margin-left: 136px;
+	position: relative;
+}
+
+.basecamp_viewtodo_postedon2 {
+	background: none repeat scroll 0 0 #98BDC6;
+	border: 1px solid #6E8D94;
+	display: block;
+	float: left;
+	height: 20px;
+	margin: 10px 0 0 -40px;
+	position: relative;
+	text-shadow: 0 1px 0 #8BAEB7;
+	width: 100%;
+}
+
+.basecamp_viewtodo_postedon3 {
+	color: #FFFFFF;
+	padding: 3px 0 0 6px;
+}
+
+.basecamp_viewtodo_postedon4 {
+	bottom: -15px;
+	display: block;
+	height: 14px;
+	left: 0;
+	position: absolute;
+	width: 19px;
+}
+
+.basecamp_viewtodo_comment1 {
+	padding: 50px 0 0;
+}
+
+.basecamp_viewtodo_comment2 {
+	padding: 0 0 15px 20px;
+}
+
+.basecamp_viewtodo_comment3 {
+	color: #333333;
+	cursor: text;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+#window_basecamp_view_todo {
+	background-color: #F4ECE0;
+}
