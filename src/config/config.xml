@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<title>Basecamp</title>
+	<description></description>
+	<author></author>
+	<tabs>
+		<tab type='admin' title='Basecamp' id='111' width='120' permission='false'>
+			<tabitem link="/basecamp/Manager/ManageForm">Manage</tabitem>
+		</tab>
+	</tabs>
+</config>

@@ -1,0 +1,35 @@
+<?php
+/**
+ * @copyright      2001-2015 Kayako
+ * @license        https://www.freebsd.org/copyright/freebsd-license.html
+ * @link           https://github.com/kayako/basecamp-integration
+ */
+/**
+ * 'staff_ticket_generaltoolbar' hook file
+ * The hook gets called while rendering the ticket general toolbar
+ * We add the toolbar button for exporting issues to Basecamp
+ *
+ * @author Atul Atri
+ */
+$_ticketId        = $_SWIFT_TicketObject->GetTicketID();
+$_todoId          = 0;
+$_basecampTodoUrl = false;
+$_todoInfo        = SWIFT_TodoTicketLink::getTodoInfo($_ticketId);
+
+if ($_todoInfo) {
+	$_todoId          = $_todoInfo['todoid'];
+	$_todoProjectId   = $_todoInfo['projectid'];
+	$_basecampTodoUrl = SWIFT_APIBase::BasecampTodoUrl($_todoProjectId, $_todoId);
+}
+
+$this->UserInterface->Toolbar->AddButton($this->Language->Get('basecamp_button'),
+	SWIFT::Get('swiftpath') . '__apps/basecamp/themes/__cp/images/basecamp-icon.gif',
+	null,
+	SWIFT_UserInterfaceToolbar::LINK_JAVASCRIPT, 'basecamp');
+?>
+<script type="text/javascript">
+	$(document).ready(function() {
+		SWIFT.Basecamp.AdminObject.CreateBasecampMenu(<?php echo  $_ticketId ?>, <?php echo  $_todoId ?>, "<?php echo  $_basecampTodoUrl ?>");
+		SWIFT.Basecamp.AdminObject.AddtodoEvents();
+	});
+</script>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<swiftsettings>
+	<group name="settings_basecamp" app="basecamp" ishidden="0">'
+		<setting name="bc_app_name" type="text" >
+			<defaultvalue></defaultvalue>
+		</setting>
+		<setting name="bc_email" type="text" >
+			<defaultvalue></defaultvalue>
+		</setting>
+
+		<setting name="bc_app_id" type="text" >
+			<defaultvalue></defaultvalue>
+		</setting>
+		<setting name="bc_app_secret" type="text" >
+			<defaultvalue></defaultvalue>
+		</setting>
+		<setting name="bc_app_redirect_url" type="hidden" >
+			<defaultvalue></defaultvalue>
+		</setting>
+
+		<setting name="bc_req_timeout" type="text" >
+			<defaultvalue>180</defaultvalue>
+		</setting>
+
+		<setting name="bc_base_acc_id" type="text" >
+			<defaultvalue></defaultvalue>
+		</setting>
+		<setting name="bc_auth_token" type="hidden" >
+			<defaultvalue></defaultvalue>
+		</setting>
+		<setting name="bc_refresh_token" type="hidden" >
+			<defaultvalue></defaultvalue>
+		</setting>
+	</group>
+</swiftsettings>
